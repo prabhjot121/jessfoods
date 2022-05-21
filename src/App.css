@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Wet+Paint&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#title-img {
+  height: 60px;
+  width: 90px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: white;
+  width: 100%;
+  padding: 10px 0 15px 0;
+  font-family: "Rubik Wet Paint", cursive;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#menu-btn {
+  display: none;
+}
+header a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  background-color: rgb(251, 227, 91);
+  padding: 10px;
+}
+header a::after,
+header a::before {
+  content: " ";
+  width: 5px;
+  border: 0px solid black;
+  height: 5px;
+  position: absolute;
+  transition: all 0.4s;
+}
+header a::before {
+  bottom: 2px;
+  right: 2px;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+}
+header a::after {
+  top: 2px;
+  left: 2px;
+  border-top: 4px solid black;
+  border-left: 4px solid black;
+}
+
+header a:hover:before,
+header a:hover:after {
+  width: 100%;
+  height: 100%;
+}
+header p {
+  font-size: 25px;
+  display: flex;
+  align-items: flex-end;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+header p img {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
+#links {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* styles for main */
+
+#section1 {
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beef-empanadas-1640021932.jpeg");
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#section1 div {
+  width: 40%;
+  margin-left: 40%;
+  position: relative;
+}
+
+#section1 h1:nth-child(1) {
+  padding: 10px;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: showheading 2s ease-in-out 1 forwards;
+}
+#section1 h1:nth-child(2) {
+  color: red;
+  font-size: 50px;
+  background: rgba(255, 255, 255, 0.823);
+  margin: 2px 0;
+  padding-left: 7px;
+  opacity: 0;
+  animation: changecolor 2s ease-in-out 1 forwards;
+  animation-delay: 0.5s;
+}
+@keyframes showheading {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showheading2 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes changecolor {
+  0% {
+    color: green;
+  }
+  25% {
+    opacity: 1;
+    color: rgb(255, 217, 0);
+  }
+  50% {
+    opacity: 1;
+    color: orange;
+  }
+  75% {
+    opacity: 1;
+    color: rgb(198, 18, 48);
+  }
+  100% {
+    opacity: 1;
+    color: orangered;
+  }
+}
+#section1 h3 {
+  padding: 10px;
+  color: orangered;
+  font-size: 40px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: showheading 2s ease-in-out 1 forwards;
+}
+#section2 h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 50px;
+}
+
+.item {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.item img {
+  padding: 0 40px;
+  width: 40%;
+  height: 50vh;
+}
+.item-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.appear-anim {
+  animation: appearAnim 0.7s ease-in-out forwards;
+}
+
+@keyframes appearAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#section3 {
+  margin: 100px 0;
+  text-align: center;
+}
+#section3 h3 {
+  margin-bottom: 20px;
+}
+#section3 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(251, 227, 91);
+}
+#section3 a:hover {
+  background-color: rgb(247, 218, 52);
+}
+#ins2 {
+  margin-top: 20px;
+}
+#section4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#section4 div {
+  width: 40%;
+  font-weight: bold;
+}
+#section4 img {
+  height: 70vh;
+  width: 35%;
+}
+
+/* styles for footer*/
+footer {
+  border: 2px solid black;
+  border-width: 2px 0 2px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px;
+  padding: 50px;
+}
+footer div {
+  opacity: 0;
+}
+footer div:nth-child(1) {
+  font-size: 25px;
+  font-family: "Rubik Wet Paint";
+  display: flex;
+  align-items: flex-end;
+}
+footer div:nth-child(1) img {
+  margin-left: 10px;
+}
+footer div h2 {
+  margin: 10px 0;
+  padding: 5px;
+  color: black;
+  background-color: rgb(247, 218, 52);
+}
+footer div p {
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(251, 227, 91);
+}
+#callus {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(251, 227, 91);
+  padding: 5px;
+}
+#callus:hover {
+  background-color: rgb(247, 218, 52);
+}
+
+/* styles for mobile */
+@media only screen and (max-width: 600px) {
+  #links {
+    z-index: 2;
+    padding: 30px 0;
+    display: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.821);
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+  }
+  #links a {
+    margin: 10px 0;
+    height: fit-content;
+    width: fit-content;
+  }
+  header {
+    height: 10vh;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+  #menu-btn {
+    display: block;
+    height: 40px;
+    width: 35px;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  #section1 div {
+    margin-left: 0;
+    width: 90%;
+  }
+  .item {
+    flex-direction: column;
+    position: relative;
+    height: 50vh;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .item img,
+  .item div {
+    width: 100%;
+    height: 100%;
+  }
+  .item img {
+    padding: 0;
+  }
+  .item > div {
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 20px;
+  }
+  .item > div > p {
+    padding: 10px;
+  }
+  .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  #section3 {
+    padding: 20px;
+    margin: 30px 20px;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 209, 67, 1) 0%,
+      rgba(255, 145, 83, 1) 90%
+    );
+  }
+  #section4 {
+    flex-direction: column;
+  }
+  #section4 div,
+  #section4 img {
+    width: 90%;
+  }
+  #section4 img {
+    height: 50vh;
+  }
+  #section4 div h2 {
+    text-align: center;
+  }
+  #section4 img {
+    margin-top: 20px;
+  }
+  footer {
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  footer div:nth-child(1) {
+    padding: 10px 0;
+  }
+  footer div {
+    margin: 10px 0;
+  }
+}
