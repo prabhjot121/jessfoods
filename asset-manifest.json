@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jessfoods/static/css/main.d5704851.css",
-    "main.js": "/jessfoods/static/js/main.a4bfbe0d.js",
-    "static/media/about.jpeg": "/jessfoods/static/media/about.ffcde16103f18e01f773.jpeg",
-    "index.html": "/jessfoods/index.html",
-    "main.d5704851.css.map": "/jessfoods/static/css/main.d5704851.css.map",
-    "main.a4bfbe0d.js.map": "/jessfoods/static/js/main.a4bfbe0d.js.map"
+    "main.css": "/static/css/main.d5704851.css",
+    "main.js": "/static/js/main.473c6ff4.js",
+    "static/media/about.jpeg": "/static/media/about.ffcde16103f18e01f773.jpeg",
+    "index.html": "/index.html",
+    "main.d5704851.css.map": "/static/css/main.d5704851.css.map",
+    "main.473c6ff4.js.map": "/static/js/main.473c6ff4.js.map"
   },
   "entrypoints": [
     "static/css/main.d5704851.css",
-    "static/js/main.a4bfbe0d.js"
+    "static/js/main.473c6ff4.js"
   ]
 }
